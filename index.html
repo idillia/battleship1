@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Battle Ship</title>
+    <style type="text/css">
+        .player1 {
+            float:left;
+        }
+        .player2 {
+            float:right;
+        }
+
+        p {
+            cursor:pointer;
+        }
+        .DataTable  td, th {
+            color : black;
+            background : #fff;
+            border : 1px solid black;
+            font : bold 12px Helvetica;
+            padding : 0;
+            color : #666;
+            border-collapse : collapse;
+            margin : 15px 10px 17px 10px;
+            vertical-align : middle;
+            text-align : center;
+            cursor:pointer;
+        }
+        table.DataTable td {
+            height: 27px;
+            width : 27px;
+            cursor:pointer;
+
+        }
+        table.DataTable th {
+            color : black;
+        }
+        .selected {
+            background: red;
+            font: 30px;
+        }
+    </style>
+
+</head>
+<body>
+Changes.Russian cruiser Aurora
+<table class="DataTable" cellpadding="0" cellspacing="0"  id="">
+    <tr>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th>I</th>
+        <th>L</th>
+
+    </tr>
+    <tr>
+        <th>1</th>
+        <td id="a1">1</td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+        <td id=""></td>
+    </tr>
+    <tr>
+        <th>2</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>3</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>4</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>5</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>6</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>7</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>8</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>9</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+    <tr>
+        <th>10</th>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+    <td id=""></td>
+</tr>
+
+
+</table>
+<div>
+    <div class="player1">
+    Aurora
+    Hits: 5/50
+    </div>
+    <div class="player2">
+        New Changes
+        Hits: 2/50
+    </div>
+
+</div>
+
+<script>
+    var path=encodeURI('missed.png');
+
+    $(document).ready(function() {
+        $("td").click(function(){
+            if (window.console) {
+                console.log("Changing td color!");
+            }
+            $(this).css('background-image','url(' + path + ')');
+        });
+    });
+
+</script>
+</body>
+</html>
+
