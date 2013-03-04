@@ -1,0 +1,39 @@
+h1 {
+    text-align: left ! important ;
+    margin: 5px 0 5px 10px ! important;
+}
+body {
+    width:450px;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+table {
+    background-image:url("../img/spacebg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;"
+}
+.DataTable  td, th {
+    color : black;
+    border : 1px dotted #adff2f;
+    font : bold 12px Helvetica;
+    padding : 0;
+    color : #666;
+    border-collapse : collapse;
+    margin : 15px 10px 17px 10px;
+    vertical-align : middle;
+    text-align : center;
+    cursor:pointer;
+}
+table.DataTable td {
+    height: 30px;
+    width : 30px;
+    cursor:pointer;
+}
+ul.nostyle  li {
+    display: inline;
+    margin:0; ! important;
+    padding:0; ! important;
+}
+
+
